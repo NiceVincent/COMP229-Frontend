@@ -1,6 +1,7 @@
 {
     "/api": {
         "target": "https://comp229-backend.onrender.com",
-        "secure": false
+        "secure": false,
+        "changeOrigin": true
     }
 }

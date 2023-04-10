@@ -11,8 +11,7 @@ export class VideoService {
 
   constructor(private fb: FormBuilder, private http: HttpClient) { }
 
-  readonly apiURL = 'https://comp229-frontend.onrender.com/api/videos';
-  // readonly apiURL = 'http://localhost:3000/api/videos';
+  readonly apiURL = '/api/videos';
   videoList: Video[] = [];
 
   videoForm = this.fb.group({
