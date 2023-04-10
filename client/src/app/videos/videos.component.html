@@ -21,13 +21,12 @@
                 </thead>
 
                 <tbody>
-                    <tr *ngFor="let video of service.videoList"
-                        (click)="editForm(video)">
-                        <td style="cursor: pointer">
+                    <tr *ngFor="let video of service.videoList">
+                        <td style="cursor: pointer" (click)="editForm(video)">
                             {{video.name}}
                         </td>
-                        <td>{{video.videoLink}}</td>
-                        <td>{{video.notes}}</td>
+                        <td (click)="editForm(video)">{{video.videoLink}}</td>
+                        <td (click)="editForm(video)">{{video.notes}}</td>
                         <td style="cursor: pointer;">
                             <i class="far fa-trash-alt fa-lg text-secondary" 
                                 (click)="handleDelete(video._id)"></i>
