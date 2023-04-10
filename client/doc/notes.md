@@ -1,4 +1,9 @@
 # Common Commands for Angular
+0. init
+```shell
+$ ng version # check version
+$ ng new project_name # init project
+```
 
 1. start the server
 ```shell
