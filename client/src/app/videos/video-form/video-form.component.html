@@ -1,0 +1,29 @@
+<form class="row" [formGroup]="service.videoForm"
+    (submit)="handleFormSubmit()" [class.submitted]="submitted">
+    <div class="form-group mb-3">
+        <label for="nameTextField">Title</label>
+        <input type="text" class="form-control"
+        placeholder = "Enter the video's title"
+        name="name" required formControlName="name">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="videoTextField">Vidoe URL</label>
+        <input type="text" class="form-control"
+        placeholder = "Enter the video's url"
+        name="videoLink" required formControlName="videoLink">
+    </div>
+    
+    <div class="form-group mb-3">
+        <label for="notesTextField">Notes</label>
+        <input type="text" class="form-control"
+        placeholder = "Enter the notes for the video"
+        name="notes" formControlName="notes">
+    </div>
+
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">
+            Submit Incident Note
+        </button>
+    </div>
+</form>

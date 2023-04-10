@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+ * basic form validation style
+ */
+ form.ng-invalid.submitted input.ng-invalid {
+    border-color: red;
+}
+
+/**
+ * table row can click to edit
+ */
+table tr:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
