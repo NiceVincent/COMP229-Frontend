@@ -36,6 +36,7 @@ imports: [
     ToastrModule.forRoot(), // ToastrModule for ngx-toastr
 ]
 ```
+- ref: https://www.npmjs.com/package/ngx-toastr
 
 # Knowledge
 - Angular using `rxjs`(functional programming library) as a default pkg to handle the API calling logic.
